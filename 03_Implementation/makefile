@@ -8,7 +8,7 @@ src/food.c\
 
 # All test source files
 TEST_SRC = src/food.c\
-test/foodtest.c\
+test/foodtest.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
@@ -29,7 +29,6 @@ all: $(SRC) $(BUILD)
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
-
 
 # Build and run the unit tests
 test:$(BUILD)
