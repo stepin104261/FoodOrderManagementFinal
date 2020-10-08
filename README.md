@@ -1,6 +1,7 @@
 # FoodOrderManagement
 
 Food Order Management is a system that is mainly focused on the concept of ordering food. The proposed system helps in many ways. Account maintenance and billing is made easier. The system mainly has two sections: 
+
 ● Customer section 
 ● Admin section 
 
