@@ -64,7 +64,5 @@ int deletefood(int serial){
 }
 }
 void cls(){
-
 	system("cls");
-
 }
