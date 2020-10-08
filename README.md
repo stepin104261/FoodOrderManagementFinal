@@ -2,6 +2,8 @@
 
 # FoodOrderManagement
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c60e46d9ee54a05b088a9a663a3fb73)](https://app.codacy.com/gh/stepin104261/FOM?utm_source=github.com&utm_medium=referral&utm_content=stepin104261/FOM&utm_campaign=Badge_Grade)
+
 Food Order Management is a system that is mainly focused on the concept of ordering food. The proposed system helps in many ways. Account maintenance and billing is made easier. The system mainly has two sections: 
 
 ● Customer section 
