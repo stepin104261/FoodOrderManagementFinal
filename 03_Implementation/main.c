@@ -137,14 +137,14 @@ int main(){
 							//Sleep(150);
 
 						}
-						Sleep(1500);
+						//Sleep(1500);
 					}
 
 					if(c==0){
 
 						cls();  middle1(); pre(4);
 					printf("No Card History\n");}
-					Sleep(1500);
+					//Sleep(1500);
 					goto adminchoice;
 				}
 
@@ -176,14 +176,17 @@ int main(){
                       scanf("%d",&fdata);
                             node *exist;
                             exist = list;
-                      while(exist->data!=fdata){
+                      while(exist->data!=fdata)
+                      {
                             if(exist->next==NULL){
                                 break;
                             }
                         exist=exist->next;
                       }
-                      if(exist->data==fdata){
-                       cls(); br(5);pre(3);  printf(" Food Serial Already Exist, Please Re-Enter  "); Sleep(2000);
+                      if(exist->data==fdata)
+                        {
+                       cls(); br(5);pre(3);
+                      printf(" Food Serial Already Exist, Please Re-Enter  "); //Sleep(2000);
                        goto foodserial;
                       }
 
@@ -196,14 +199,18 @@ int main(){
 
 
 
-					br(2);pre(4);  printf("Submitting your data");for(int cs=0;cs<4;cs++){printf(" .");Sleep(500);}
+					br(2);pre(4);  printf("Submitting your data");
+					for(int cs=0;cs<4;cs++)
+					{
+					    printf(" ."); //Sleep(500);}
 
 
 					insertend(fdata,ffoodname,fquantity,fprice);
 
 					br(2);pre(4);      printf("Adding Food  Successful....\n");
 
-					Sleep(2000);
+					//Sleep(2000);
+				}
 
 					goto adminchoice;
 
@@ -227,7 +234,7 @@ int main(){
 						deletefood(fdelete);
 					}
 					else{
-						br(2); pre(2); printf("Please Enter Correct Number :  "); Sleep(500);
+						br(2); pre(2); printf("Please Enter Correct Number :  "); //Sleep(500);
 						goto fdelete;
 					}
 
@@ -237,7 +244,7 @@ int main(){
 
 				else if(adminchoice==5){
 
-					cls();    foodlist(); Sleep(1000);
+					cls();    foodlist(); //Sleep(1000);
 
 					br(2);pre(4);  printf("1. <-- back  \n\n");pre(5);
 
@@ -257,12 +264,12 @@ int main(){
 						middle1(); pre(4);
 						printf("Item Counting ");
 						printf(" %d ",cs);
-						Sleep(150);
+						//Sleep(150);
 						cls();
 					}
 					cls();
 					middle1();pre(4);
-					printf("Total Food Item is --> %d  \n",citem); Sleep(2000);
+					printf("Total Food Item is --> %d  \n",citem); //Sleep(2000);
 					goto adminchoice;
 
 				}
@@ -278,7 +285,7 @@ int main(){
 					fptr=fopen(date,"w");
 					backuploader();
 					if(fptr==NULL){
-						br(3); pre(3); printf("Error!"); Sleep(500);
+						br(3); pre(3); printf("Error!"); //Sleep(500);
 						goto adminchoice;
 					}
 					fprintf(fptr,"Total Cash Today : %0.2f\n\n\n",totalmoney);
@@ -286,7 +293,7 @@ int main(){
 					for(int l=1; l<=c;l++){
 						fprintf(fptr,"%d ------- %0.2f \n",cardno[l],cardmoney[l]);
 					}
-					br(2);pre(4); printf("Backup Successful..."); Sleep(1500);
+					br(2);pre(4); printf("Backup Successful..."); //Sleep(1500);
 
 
 
@@ -322,7 +329,7 @@ int main(){
 				}
 
 				else{
-					br(2); pre(4); printf("Please Select From List :  "); Sleep(500);
+					br(2); pre(4); printf("Please Select From List :  "); //Sleep(500);
 					goto adminchoice;
 				}
 
@@ -341,7 +348,7 @@ int main(){
 		else if(main_menu_choice==3){
 			cls();
 			middle1(); pre(3); printf("Thank You For Using Our System \n\n\n\n\n\n\n");
-			Sleep(1000);
+			//Sleep(1000);
 
 			exit(1);
 
@@ -349,7 +356,7 @@ int main(){
 
 	}
 	else{
-		br(2); pre(4); printf("Please Enter Correct Choice"); Sleep(300);
+		br(2); pre(4); printf("Please Enter Correct Choice"); //Sleep(300);
 		goto mainmenu;
 	}
 
@@ -373,7 +380,7 @@ int main(){
 
 		temp = temp->next;
 		if(temp==NULL){
-			br(2); pre(4);  echo("Please Choice From List: "); br(2); Sleep(1000);
+			br(2); pre(4);  echo("Please Choice From List: "); br(2); //Sleep(1000);
 			goto foodlist;
 		}
 
@@ -389,12 +396,12 @@ int main(){
 		fflush(stdin); scanf("%d",&fcquantity); cls();
 
 		if(fcquantity==0){
-			cls(); middle1();pre(3); printf("Quantity Can not be Zero "); Sleep(2000);
+			cls(); middle1();pre(3); printf("Quantity Can not be Zero "); //Sleep(2000);
 			cls();
 			goto foodlist;
 		}
 		else if(fcquantity>temp->quantity){
-			cls(); middle1();pre(3); printf("Out of Stock ! "); Sleep(2000);
+			cls(); middle1();pre(3); printf("Out of Stock ! "); //Sleep(2000);
 
 			goto foodlist;
 		}
@@ -534,7 +541,7 @@ int main(){
 
 	else{
 
-		br(2);pre(4);  echo("Please Select a Choice From List "); br(2); Sleep(300);
+		br(2);pre(4);  echo("Please Select a Choice From List "); br(2); //Sleep(300);
 
 		goto foodlist;
 
@@ -576,9 +583,9 @@ void span(int space){
 void main_menu(){
 
 	cls();
-	br(5); pre(3); echo("===> 1. Food List"); Sleep(400);
-	br(2); pre(3); echo("===> 2. Admin Panel"); Sleep(400);
-	br(2); pre(3); echo("===> 3. Exit");  Sleep(400);
+	br(5); pre(3); echo("===> 1. Food List"); //Sleep(400);
+	br(2); pre(3); echo("===> 2. Admin Panel"); //Sleep(400);
+	br(2); pre(3); echo("===> 3. Exit");  //Sleep(400);
 	//   br(2); pre(3); echo("=> 4. Admin Panel");  Sleep(400);
 
 	br(1);
@@ -685,13 +692,16 @@ void insertmid(int pos, int data, char foodname[25], int quantity, float price){
 
 			temp->next = temp->next->next;
 			cls();
-			printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++){printf(" .");Sleep(400);}
+			printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++)
+			{
+			    printf(" ."); //Sleep(400);}
 
-			printf("\n\n\n\n\t\t\tDeleted Successfully \n"); Sleep(500);
+			printf("\n\n\n\n\t\t\tDeleted Successfully \n");
 
 		}
+	}
 		else{
-			printf("\n\n\n\n\t\t\tFood Item Not Found\n"); Sleep(500);
+			printf("\n\n\n\n\t\t\tFood Item Not Found\n"); //Sleep(500);
 		}
 
 		head = temp ;
@@ -701,17 +711,19 @@ void insertmid(int pos, int data, char foodname[25], int quantity, float price){
 
 		temp = temp->next;
 		cls();
-		printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++){printf(" .");Sleep(400);}
+		printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++)
+		{
+		    printf(" ."); //Sleep(400);}
 
-		printf("\n\n\n\n\t\t\tDeleted Successfully \n"); Sleep(500);
+		printf("\n\n\n\n\t\t\tDeleted Successfully \n"); //Sleep(500);
 
 		head = temp ;
 
 		list=head;
 	}
 	return 1;
+}
 }*/
-
 void updatefood(int udata, int uquantity){
 
 	node *temp;
@@ -780,7 +792,7 @@ void foodlist(){
 
 		temp = temp->next ;
 
-		Sleep(100);
+		//Sleep(100);
 
 	}
 
@@ -816,7 +828,7 @@ void order_view(int order, int quantity, int or_no){
 		printf("\n\t\t"); //ccolor(62);
 		printf("-------------------------------------------------------");
 
-		Sleep(100);
+		//Sleep(100);
 
 	}
 
@@ -825,9 +837,11 @@ void order_view(int order, int quantity, int or_no){
 }
 
 /*void ccolor(int clr){
+
 	HANDLE  hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, clr);
+
 }*/
 
 
@@ -845,7 +859,7 @@ void pwelcome(){
              //ccolor(120+(wlc*9));
 
 		printf(" %c",welcome[wlc]);
-		Sleep(200);
+		//Sleep(200);
 	}
 	//ccolor(26);
 	printf("\n\n\t\t\t\t ");
@@ -853,7 +867,7 @@ void pwelcome(){
             //ccolor(160+(wlc2*9));
 
 		printf(" %c",welcome2[wlc2]);
-		Sleep(200);
+		//Sleep(200);
 	}
 	//ccolor(26);
 	printf("\n\n\n\t\t\t ");
@@ -869,7 +883,7 @@ void pwelcome(){
 			printf(" %c",welcome3[wlc3]);
 		}
 
-		Sleep(200);
+		//Sleep(200);
 	}
 	//ccolor(26);
 	printf("\n\n\n\t\t\t\t ");
@@ -884,7 +898,7 @@ void pwelcome(){
 
 			printf(" %c",welcome4[wlc3]);
 		}
-		Sleep(200);
+		//Sleep(200);
 	}
 	//ccolor(26);
 
@@ -908,9 +922,9 @@ void loadingbar(void){
 			//ccolor(26);
 
 		}
-		Sleep(100);
+		//Sleep(100);
 		if(i==90 || i==50 || i==96 || i==83){
-			Sleep(100);
+			//Sleep(100);
 		}
 
 	}
@@ -925,23 +939,23 @@ void backuploader(void){
 
 		printf("\n\n\n\n\n\n\n\t\t\t\t");
 		printf("%d %% Backing UP DATA...\n\n\t\t",i);
-
-		printf("");
-
-		for (int j=0; j<i;j+=2){
+		}
+		}
+		/*for (int j=0; j<i;j+=2){
 
 			//ccolor(120+j);
 			printf(" ");
 			//ccolor(26);
+		}*/
 
-		}
-		Sleep(50);
-		if(i==90 || i==50 || i==96 || i==83){
-			Sleep(50);
+
+		//Sleep(50);
+		/*if(i==90 || i==50 || i==96 || i==83){
+			//Sleep(50);
 		}
 	}
-
-}
+return;
+}*/
 
 
 void middle1(void){
