@@ -1,6 +1,6 @@
 #include<food.h>
 
-/*struct Node{
+struct Node{
 
 	char foodname[50];
 	int quantity;
@@ -13,7 +13,7 @@
 
 typedef struct Node node ;
 
-node *head, *list;*/
+node *head, *list;
 
 int main(){
 
