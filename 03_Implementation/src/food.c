@@ -19,6 +19,7 @@ int deletefood(int serial){
 
 	temp = list;
 
+
 	if(temp->data != serial){
 
 		while(temp->next->data != serial){
@@ -29,15 +30,14 @@ int deletefood(int serial){
 
 			temp->next = temp->next->next;
 			cls();
-			printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);
-			for(int cs=0;cs<4;cs++)
+			printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++)
 			{
-				printf(" .");Sleep(400);
-			}
+			    printf(" ."); //Sleep(400);}
 
-			printf("\n\n\n\n\t\t\tDeleted Successfully \n"); //Sleep(500);
+			printf("\n\n\n\n\t\t\tDeleted Successfully \n");
 
 		}
+	}
 		else{
 			printf("\n\n\n\n\t\t\tFood Item Not Found\n"); //Sleep(500);
 		}
@@ -49,8 +49,9 @@ int deletefood(int serial){
 
 		temp = temp->next;
 		cls();
-		printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);
-		for(int cs=0;cs<4;cs++){printf(" .");//Sleep(400);}
+		printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++)
+		{
+		    printf(" ."); //Sleep(400);}
 
 		printf("\n\n\n\n\t\t\tDeleted Successfully \n"); //Sleep(500);
 
@@ -59,4 +60,5 @@ int deletefood(int serial){
 		list=head;
 	}
 	return 1;
+}
 }
