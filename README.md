@@ -1,4 +1,4 @@
-![Unit testing](https://github.com/stepin104261/FOM/workflows/Unit%20testing/badge.svg)
+![Unit testing](https://github.com/stepin104261/FOM/workflows/Unit%20testing/badge.svg)     ![cppcheck-action](https://github.com/stepin104261/FOM/workflows/cppcheck-action/badge.svg)
 
 # FoodOrderManagement
 
