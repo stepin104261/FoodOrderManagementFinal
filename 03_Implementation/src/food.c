@@ -1,21 +1,21 @@
 #include <food.h>
 
-struct Node{
+struct Node1{
 
 	char foodname[50];
 	int quantity;
 	float price;
 	int data;
-	struct Node *next;
+	struct Node1 *next;
 
 };
-typedef struct Node node ;
-node *head, *list;
+typedef struct Node1 node1 ;
+node1 *head, *list;
 
 int deletefood(int serial){
 
-	node *temp;
-	temp=(node *)malloc(sizeof(node));
+	node1 *temp;
+	temp=(node1 *)malloc(sizeof(node1));
 
 	temp = list;
 
@@ -38,7 +38,8 @@ int deletefood(int serial){
 
 		}
 	}
-		else{
+		else
+		{
 			printf("\n\n\n\n\t\t\tFood Item Not Found\n"); //Sleep(500);
 		}
 
