@@ -548,11 +548,11 @@ int main(){
 	}  ///end get food choice
 }
 
-void cls(){
+/*void cls(){
 
 	system("cls");
 
-}
+}*/
 
 void echo(char print[]){
 
