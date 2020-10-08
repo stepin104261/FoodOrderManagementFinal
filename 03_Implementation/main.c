@@ -18,7 +18,7 @@ node *head, *list;
 
 int main(){
 
-	loadingbar();
+	//loadingbar();
 	cls();
 	pwelcome();
 	//Sleep(300);
@@ -674,6 +674,41 @@ void insertmid(int pos, int data, char foodname[25], int quantity, float price){
 	//    free(temp);
 }
 
+/*int deletefood(int serial){
+	node *temp;
+	temp=(node *)malloc(sizeof(node));
+	temp = list;
+	if(temp->data != serial){
+		while(temp->next->data != serial){
+			temp = temp->next;
+		}
+		if(temp->next->data == serial){
+			temp->next = temp->next->next;
+			cls();
+			printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++)
+			{
+			    printf(" ."); //Sleep(400);}
+			printf("\n\n\n\n\t\t\tDeleted Successfully \n");
+		}
+	}
+		else{
+			printf("\n\n\n\n\t\t\tFood Item Not Found\n"); //Sleep(500);
+		}
+		head = temp ;
+	}
+	else{
+		temp = temp->next;
+		cls();
+		printf("\n\n\n\n\t\t\tDeleting Item %d ",serial);for(int cs=0;cs<4;cs++)
+		{
+		    printf(" ."); //Sleep(400);}
+		printf("\n\n\n\n\t\t\tDeleted Successfully \n"); //Sleep(500);
+		head = temp ;
+		list=head;
+	}
+	return 1;
+}
+}*/
 void updatefood(int udata, int uquantity){
 
 	node *temp;
@@ -787,11 +822,9 @@ void order_view(int order, int quantity, int or_no){
 }
 
 /*void ccolor(int clr){
-
 	HANDLE  hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, clr);
-
 }*/
 
 
@@ -853,7 +886,7 @@ void pwelcome(){
 	//ccolor(26);
 
 }
-void loadingbar(void){
+/*void loadingbar(void){
 
 	for (int i=15;i<=100;i+=5){
 
@@ -873,13 +906,13 @@ void loadingbar(void){
 
 		}
 		//Sleep(100);
-		//if(i==90 || i==50 || i==96 || i==83){
+		if(i==90 || i==50 || i==96 || i==83){
 			//Sleep(100);
-		//}
+		}
 
 	}
 
-}
+}*/
 void backuploader(void){
 
 	for (int i=15;i<=100;i+=5){
@@ -892,7 +925,6 @@ void backuploader(void){
 		}
 		}
 		/*for (int j=0; j<i;j+=2){
-
 			//ccolor(120+j);
 			printf(" ");
 			//ccolor(26);
