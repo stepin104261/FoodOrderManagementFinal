@@ -30,7 +30,7 @@ void pre(int tab);
 void span(int space);
 //void ccolor(int clr);
 void pwelcome();
-void loadingbar();
+//void loadingbar();
 void middle1(void);
 void middtab1(void);
 void backuploader(void);
