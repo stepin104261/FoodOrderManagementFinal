@@ -63,7 +63,6 @@ int main(){
 			printf("=> 0. Main Menu ");
 			foodlist();
 
-
 		}
 
 		else if( main_menu_choice == 2){
