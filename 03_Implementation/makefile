@@ -1,6 +1,5 @@
 PROJECT_NAME = FoodOrderManagement
 
-
 BUILD = build
 
 # All source code files
@@ -9,7 +8,7 @@ src/food.c\
 
 # All test source files
 TEST_SRC = src/food.c\
-test/foodtest.c
+test/foodtest.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
