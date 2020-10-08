@@ -9,6 +9,8 @@ struct Node{
 	struct Node *next;
 
 };
+typedef struct Node node ;
+node *head, *list;
 
 int deletefood(int serial){
 
