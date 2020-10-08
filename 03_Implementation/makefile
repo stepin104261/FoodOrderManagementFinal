@@ -10,6 +10,7 @@ src/food.c\
 TEST_SRC = src/food.c\
 test/foodtest.c
 
+
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
