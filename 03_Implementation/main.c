@@ -7,7 +7,6 @@ struct Node{
 	float price;
 	int data;
 	struct Node *next;
-
 };
 
    ///Global Type
