@@ -1,5 +1,6 @@
 #include<food.h>
 
+
 struct Node{
 
 	char foodname[50];
