@@ -18,6 +18,7 @@ void foodlist();
 void order_view(int order, int quantity, int or_no);
 void main_menu();
 
+
 ///Delete & Count Function
 int deletefood(int serial);
 int countitem();
