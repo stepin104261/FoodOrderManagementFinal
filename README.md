@@ -1,5 +1,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c60e46d9ee54a05b088a9a663a3fb73)](https://app.codacy.com/gh/stepin104261/FOM?utm_source=github.com&utm_medium=referral&utm_content=stepin104261/FOM&utm_campaign=Badge_Grade)
-![Unit testing](https://github.com/stepin104261/FOM/workflows/Unit%20testing/badge.svg)     ![cppcheck-action](https://github.com/stepin104261/FOM/workflows/cppcheck-action/badge.svg)     ![C/C++ CI](https://github.com/stepin104261/FOM/workflows/C/C++%20CI/badge.svg)
+![Valgrind](https://github.com/stepin104261/FOM/workflows/Valgrind/badge.svg)
+![Unit testing](https://github.com/stepin104261/FOM/workflows/Unit%20testing/badge.svg)
+![cppcheck-action](https://github.com/stepin104261/FOM/workflows/cppcheck-action/badge.svg)
+![C/C++ CI](https://github.com/stepin104261/FOM/workflows/C/C++%20CI/badge.svg)
 
 # Food Order Management
 
