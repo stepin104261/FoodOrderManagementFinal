@@ -2,6 +2,7 @@
 
 struct Node1{
 
+	
 	char foodname[50];
 	int quantity;
 	float price;
