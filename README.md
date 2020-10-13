@@ -1,10 +1,8 @@
-
 ![Valgrind](https://github.com/stepin104261/FOM/workflows/Valgrind/badge.svg)   ![Unit testing](https://github.com/stepin104261/FOM/workflows/Unit%20testing/badge.svg)   ![cppcheck-action](https://github.com/stepin104261/FOM/workflows/cppcheck-action/badge.svg)   ![C/C++ CI](https://github.com/stepin104261/FOM/workflows/C/C++%20CI/badge.svg)
 
 # Food Order Management
 
 Food Order Management is a system that is mainly focused on the concept of ordering food. Account maintenance and billing is made easier. The system mainly has two sections: 
-
 ● Customer section 
 ● Admin section 
 
