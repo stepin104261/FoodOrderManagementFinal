@@ -164,7 +164,7 @@ int main(){
 
 					br(3);pre(4);      printf(" Enter Food Name :  ");
 
-					//fflush(stdin);     
+					fflush(stdin);     
 					scanf("%[^\n]s",ffoodname);
 					fquantity:
 					//fflush(stdin);
