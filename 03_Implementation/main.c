@@ -372,7 +372,8 @@ int main(){
 	int get_food_choice;
 
 
-	br(2); pre(3);fflush(stdin);
+	br(2); pre(3);
+	//fflush(stdin);
 	printf("Place Your Order: ") ;
 	scanf("%d",&get_food_choice);
 
@@ -437,7 +438,8 @@ int main(){
 			int payment;
 			payment:
 
-			fflush(stdin);  scanf("%d",&payment);
+			//fflush(stdin);  
+			scanf("%d",&payment);
 
 			if(payment==1){
 
@@ -460,7 +462,8 @@ int main(){
 				int ps_menu;
 				psmenu:
 
-				fflush(stdin);  scanf("%d",&ps_menu);
+				//fflush(stdin);  
+				scanf("%d",&ps_menu);
 
 				if(ps_menu==1){goto foodlist;}
 				else if(ps_menu==2){goto mainmenu;}
@@ -478,7 +481,8 @@ int main(){
 
 				cls();middle1();pre(4); printf("Enter Your Card No : ");
 
-				fflush(stdin);   scanf("%d",&card_number[c]);
+				//fflush(stdin);   
+				scanf("%d",&card_number[c]);
 
 
 
