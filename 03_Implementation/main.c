@@ -76,7 +76,8 @@ int main(){
 			printf("Please Enter Password or ( 1 to Back in Main Menu ) : ");
 
 
-			fflush(stdin);  scanf("%d",&admin_panel_choice);
+			//fflush(stdin);  
+			scanf("%d",&admin_panel_choice);
 
 			if(admin_panel_choice==123321){
 
@@ -110,7 +111,8 @@ int main(){
 
 				int adminchoice;
 
-				fflush(stdin);   scanf("%d",&adminchoice);
+				//fflush(stdin);   
+				scanf("%d",&adminchoice);
 
 				if(adminchoice==1){
 
@@ -162,14 +164,16 @@ int main(){
 
 					br(3);pre(4);      printf(" Enter Food Name :  ");
 
-					fflush(stdin);     scanf("%[^\n]s",ffoodname);
+					//fflush(stdin);     
+					scanf("%[^\n]s",ffoodname);
 					fquantity:
-					fflush(stdin);
+					//fflush(stdin);
 
 					br(2);pre(4);
 					printf(" Enter Food Quantity :  ");
 
-					scanf("%d",&fquantity); fflush(stdin);
+					scanf("%d",&fquantity); 
+					//fflush(stdin);
 
                         foodserial:
 					br(2);pre(4);  printf(" Enter Food Serial :  ");
@@ -191,9 +195,10 @@ int main(){
                       }
 
                     fprice:
-                      fflush(stdin);
+                      //fflush(stdin);
 
-					br(2);pre(4);  printf(" Enter Food Price :  ");fflush(stdin);
+					br(2);pre(4);  printf(" Enter Food Price :  ");
+					//fflush(stdin);
 
 					scanf("%f",&fprice);
 
@@ -224,7 +229,8 @@ int main(){
 					int fdelete;
 					fdelete:
 
-					fflush(stdin); scanf("%d",&fdelete);
+					//fflush(stdin); 
+					scanf("%d",&fdelete);
 					node *temp;
 					temp=list;
 					while(temp->data != fdelete){
@@ -250,7 +256,8 @@ int main(){
 
 
 
-					fflush(stdin);   scanf("%d",&any);
+					//fflush(stdin);   
+					scanf("%d",&any);
 
 					goto adminchoice;
 
@@ -316,7 +323,8 @@ int main(){
 
 					br(2);pre(4);  printf("1. <-- back  \n\n");pre(5);
 
-					fflush(stdin);   scanf("%d",&any);
+					//fflush(stdin);   
+					scanf("%d",&any);
 
 					goto adminchoice;
 
@@ -393,7 +401,8 @@ int main(){
 
 		int fcquantity;
 
-		fflush(stdin); scanf("%d",&fcquantity); cls();
+		//fflush(stdin); 
+		scanf("%d",&fcquantity); cls();
 
 		if(fcquantity==0){
 			cls(); middle1();pre(3); printf("Quantity Can not be Zero "); //Sleep(2000);
@@ -414,7 +423,8 @@ int main(){
 		int confirm;
 		confirm:
 
-		fflush(stdin); scanf("%d",&confirm);
+		//fflush(stdin); 
+		scanf("%d",&confirm);
 
 		if(confirm == 1 ){
 
@@ -478,7 +488,8 @@ int main(){
 
 				br(2);pre(2);  printf("Enter Your Card Pin [we never save your pin]  : ");
 
-				fflush(stdin);     scanf("%d",&pin);
+				//fflush(stdin);     
+				scanf("%d",&pin);
 
 				cardmoney[c] = temp->price*fcquantity;
 
