@@ -660,17 +660,17 @@ void insertfirst(int data, char foodname[25], int quantity, float price){
 
 void insertmid(int pos, int data, char foodname[25], int quantity, float price){
 
-	node *temp;
+	node *t;
 
-	temp=(node *)malloc(sizeof(node));
+	t=(node *)malloc(sizeof(node));
 
-	temp->data = data;
+	t->data = data;
 
-	temp->price = price;
+	t->price = price;
 
-	temp-> quantity = quantity;
+	t-> quantity = quantity;
 
-	strcpy(temp->foodname,foodname);
+	strcpy(t->foodname,foodname);
 
 	while(head->next->data != pos ){
 
@@ -679,8 +679,8 @@ void insertmid(int pos, int data, char foodname[25], int quantity, float price){
 
 	}
 
-	temp->next = head->next;
-	head->next = temp ;
+	t->next = head->next;
+	head->next = t ;
 
 	//    free(temp);
 }
