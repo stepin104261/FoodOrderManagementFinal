@@ -51,7 +51,9 @@ int main(){
 
 	int main_menu_choice;
 
-	br(1); pre(4); fflush(stdin); scanf("%d",&main_menu_choice);
+	br(1); pre(4); 
+	//fflush(stdin); 
+	scanf("%d",&main_menu_choice);
 
 	if((main_menu_choice >=1 && main_menu_choice <=3)){
 
